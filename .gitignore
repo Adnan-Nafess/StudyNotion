@@ -1,0 +1,99 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Build directories
+dist/
+build/
+out/
+.next/
+
+# Cache directories
+.cache/
+.temp/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env*.local
+
+# IDE and Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Debug logs
+*.log
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Testing
+coverage/
+.nyc_output/
+
+# Production
+*.prod.js
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Linux
+*~
+
+# Vim swap files
+*.swp
+*.swo
+
+# Project specific
+.sass-cache/
+*.css.map
+*.js.map
+
+# Storybook
+storybook-static/
+
+# Cypress
+cypress/screenshots/
+cypress/videos/
+
+# Serverless
+.serverless/
+
+# Debug
+dump.rdb
+
+# Local development
+*.local
+
+# Lock files (you might want to commit these)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Optional config files
+.eslintrc.js
+.prettierrc.js
+babel.config.js
