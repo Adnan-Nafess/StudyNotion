@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.VITE_BACKEND_URL;
+const BASE_URL = "https://studynotion-backend-l8cq.onrender.com/api/v1"
  
 // AUTH ENDPOINTS
 export const endpoints = {
