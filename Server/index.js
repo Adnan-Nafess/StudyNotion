@@ -22,11 +22,14 @@ database.connect();
 app.use(express.json());
 app.use(cookieParser());
 app.use(
-	cors({
-		origin:"https://study-notion-3wdq.vercel.app",
-		credentials:true,
-	})
-)
+  cors({
+    origin: ["https://study-notion-3wdq.vercel.app", "http://localhost:5173"],
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
+
 
 app.use(
 	fileUpload({
