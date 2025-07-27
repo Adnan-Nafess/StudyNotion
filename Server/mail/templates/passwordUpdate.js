@@ -1,3 +1,5 @@
+const CLIENT_URL = process.env.CLIENT_URL;
+
 exports.passwordUpdated = (email, name) => {
 	return `<!DOCTYPE html>
     <html>
@@ -55,7 +57,7 @@ exports.passwordUpdated = (email, name) => {
     
     <body>
         <div class="container">
-            <a href="https://study-notion-3wdq.vercel.app/update-password"><img class="logo"
+            <a href="${CLIENT_URL}/update-password"><img class="logo"
                     src="https://i.ibb.co/7Xyj3PC/logo.png" alt="StudyNotion Logo"></a>
             <div class="message">Password Update Confirmation</div>
             <div class="body">

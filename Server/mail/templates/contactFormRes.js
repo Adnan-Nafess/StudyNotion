@@ -1,3 +1,5 @@
+const CLIENT_URL = process.env.CLIENT_URL;
+
 exports.contactUsEmail = (
     email,
     firstname,
@@ -74,7 +76,7 @@ exports.contactUsEmail = (
     
     <body>
         <div class="container">
-            <a href="https://study-notion-3wdq.vercel.app"><img class="logo"
+            <a href="${CLIENT_URL}"><img class="logo"
                     src="https://i.ibb.co/7Xyj3PC/logo.png" alt="StudyNotion Logo"></a>
             <div class="message">Contact Form Confirmation</div>
             <div class="body">

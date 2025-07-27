@@ -1,3 +1,5 @@
+const CLIENT_URL = process.env.CLIENT_URL;
+
 exports.paymentSuccessEmail = (name, amount, orderId, paymentId) => {
     return `<!DOCTYPE html>
       <html>
@@ -67,7 +69,7 @@ exports.paymentSuccessEmail = (name, amount, orderId, paymentId) => {
       
       <body>
           <div class="container">
-              <a href="https://study-notion-3wdq.vercel.app"><img class="logo" src="https://i.ibb.co/7Xyj3PC/logo.png"
+              <a href="${CLIENT_URL}"><img class="logo" src="https://i.ibb.co/7Xyj3PC/logo.png"
                       alt="StudyNotion Logo"></a>
               <div class="message">Course Payment Confirmation</div>
               <div class="body">
