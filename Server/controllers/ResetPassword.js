@@ -29,10 +29,9 @@ exports.resetPasswordToken = async (req, res) => {
 		const url = `https://study-notion-3wdq.vercel.app/${token}`;
 
 		await mailSender(
-			passwordUpdated(updatedDetails.firstName, updatedDetails.lastName, email),
 			email,
 			"Password Reset",
-			`Your Link for email verification is ${url}. Please click this url to reset your password.`
+			passwordUpdated(url)
 		);
 
 		res.json({
